@@ -12,13 +12,13 @@ class Square(Shape):
         return self.__width
 
     def calc_area(self):
-        return self.__width * 2
+        return float(self.__width) * 2
 
     def calc_circumference(self):
-        return float(self.__width * 4)
+        return float(self.__width) * 4
 
     def display_shape_parameters(self):
-        print(f"Rectangle: color {self.get_color}, width: {self.width}")
+        print(f"Square: color {self.get_color}, width: {self.width}")
 
 
 
