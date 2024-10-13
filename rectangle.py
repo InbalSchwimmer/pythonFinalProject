@@ -16,10 +16,10 @@ class Rectangle(Square):
         return self.__width
 
     def calc_circumference(self):
-        return (self.__width * 2) + (self.__height * 2)
+        return (float(self.__width) * 2) + (float(self.__height) * 2)
 
     def calc_area(self):
-        return self.__width * self.__height
+        return float(self.__width) * float(self.__height)
 
     def display_shape_parameters(self):
         print(f"Rectangle: color {self.get_color}, width: {self.width}, height: {self.height}")

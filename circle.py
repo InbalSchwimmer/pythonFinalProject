@@ -18,8 +18,7 @@ class Circle(Shape):
 
     def calc_area(self):
         # can be done return math.pi * (self.__radius ** 2)
-        return math.pi * math.pow(self.__radius, 2)
-
+        return float(self.__radius) * float(self.__radius) * math.pi
 
     def display_shape_parameters(self):
-        print(f"Rectangle: color {self.get_color}, radius: {self.radius}")
+        print(f"Circle: color {self.get_color}, radius: {self.radius}")

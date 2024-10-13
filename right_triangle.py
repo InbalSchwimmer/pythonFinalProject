@@ -19,11 +19,11 @@ class RightTriangle(Shape):
         return self.__height
 
     def calc_area(self):
-        return (self.__height * self.__width)/2
+        return (float(self.__height) * float(self.__width))/2
 
     def calc_circumference(self):
         hypotenuse = math.sqrt(self.__width ** 2 + self.__height ** 2)  # Calculate hypotenuse
-        return self.__width + self.__height + hypotenuse
+        return float(self.__width) + float(self.__height) + hypotenuse
 
     def display_shape_parameters(self):
-        print(f"Rectangle: color {self.get_color}, width: {self.width}, height: {self.height}")
+        print(f"Right triangle: color {self.get_color}, width: {self.width}, height: {self.height}")
